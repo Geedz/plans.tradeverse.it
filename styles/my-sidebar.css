@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: fixed;
+  background-color: white;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  min-height: 400px;
+  overflow:hidden;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-bottom: #58148E solid 2px;
+  border-right: #58148E solid 2px;
+  border-bottom-right-radius: 100px;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+}
+
+.pfp-container {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  width: 100%;
+}
+
+.pfp {
+  width: 78px;
+  height: 78px;
+  border: solid #2f2f2f 2px;
+  border-radius: 100px;
+  margin-top: 60px
+}
+
+.sidebar .tabs {
+  margin-top: 40px;
+  height:80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .side-container {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  justify-content: start;
+  padding-left: 40px;
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color .2s;
+}
+
+.sidebar .side-container:hover {
+  background-color: rgba(140, 7, 221, .1);
+}
+
+.sidebar .side-container:active {
+  background-color: rgba(140, 7, 221, .3);
+}
+
+
+.sidebar .side-container h2{
+  color: #8C07DD;
+  font-size: 24px;
+}
+
+.sidebar .side-container ion-icon{
+  font-size: 30px;
+  font-weight: bold;
+  color: #8C07DD;
+  margin-right: 20px;
+}
+
+.tabs a {
+  text-decoration: none;
+}

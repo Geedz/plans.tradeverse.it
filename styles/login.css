@@ -1,0 +1,247 @@
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../assets/login-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-center {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+  padding: 0px 60px;
+  height: 680px;
+  width:100%
+}
+
+.login-center .logo-scritta {
+  position:absolute;
+  width: 320px;
+  left: 280px;
+}
+
+.login-center .wrapper {
+  position: relative;
+  display: flex;
+  width: 600px;
+  height: 380px;
+  left: 58%;
+  background: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin-bottom: 40px;
+}
+
+.form-box h2 {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 10px 0; 
+  letter-spacing: 4px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.form-box .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.input-field{
+  width: 520px;
+  height: 52px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  padding-left: 22px;
+  font-family: Poppins;
+  font-size: 16px;
+  box-shadow: 0 0 60px rgba(0,0,0,.4);
+  overflow: hidden;
+}
+
+.input-box {
+  position:relative;
+  margin-bottom: 30px;
+}
+
+.input-box label {
+  position:absolute;
+  top: 14px;
+  left: 22px;
+  color: rgb(145, 145, 145);
+  user-select: none;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.login-submit-form {
+  vertical-align: top;
+  font-size: 28px;
+  background-color: #8C07DD;
+  color: white;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 33px;
+  box-shadow: 0px 0px 62px rgba(0,0,0,.4);
+  cursor: pointer;
+  user-select: none;
+
+  transition: border-radius .3s,
+              font-size .3s;  
+}
+
+.login-submit-form:hover {
+  border-radius: 37px;
+  font-size: 30px;
+}
+
+.navigation-bottom {
+  position: absolute;
+  left: 62px;
+  bottom: 50px;
+}
+
+.navigation-bottom-password {
+  font-size: 20px;
+  font-weight: 100;
+  color: #8C07DD;
+  text-decoration: none;
+  user-select: none;
+}
+
+.navigation-bottom-password::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #8C07DD;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s;
+}
+
+.navigation-bottom-password:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navigation-bottom-register {
+  position: absolute;
+  right: 72px;
+  bottom: 50px;
+}
+
+.navigation-bottom-register {
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+}
+
+.navigation-bottom-register::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s;
+}
+
+.navigation-bottom-register:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.btn-remember {
+  display:flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: start;
+}
+
+.btn-remember label {
+  font-size: 24px;
+  padding: 12px 30px;
+  font-weight: normal;
+  color:#8C07DD;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.remember-me-container {
+  background: white;
+  padding: 12px 12px;
+  border-radius: 40px;
+  border: none;
+  margin-right: 80px;
+  margin-left: 20px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  transition: padding .3s;
+}
+
+.remember-me-container:hover {
+  padding: 15px 15px;
+}
+
+.bottom-password {
+  position: absolute;
+  right:0;
+}
+
+.error-message {
+  color: #fc8919;
+  font-size: 18px;
+  margin: -14px 0px 10px 10px;
+}
+
+.eye-icon {
+  color: #2f2f2f;
+  font-size: 26px;
+  position: absolute;
+  right: 100px;
+  bottom: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: transparent;
+  transition: box-shadow .15s,
+              font-size .15s,
+              right .15s,
+              bottom .15s;
+}
+
+.eye-icon:hover {
+  right: 98px;
+  bottom: 8px;
+  font-size: 30px;
+}
